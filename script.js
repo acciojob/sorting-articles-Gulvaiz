@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
     'The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 
     'Norma Jean', 'The Bled', 'Say Anything', 
@@ -15,7 +14,7 @@ function stripArticle(bandName) {
 const sortedBands = bands.sort((a, b) => stripArticle(a).localeCompare(stripArticle(b)));
 
 // Select the ul element
-const ul = document.getElementById('band');
+const ul = document.getElementById('bands');
 
 // Append sorted band names to the ul element
 sortedBands.forEach(band => {
